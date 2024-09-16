@@ -202,10 +202,11 @@ nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-    background-image: url("Spare parts images/background.jpg");
+    /* background-image: url("Spare parts images/background.jpg"); */
+    background: linear-gradient(45deg, black, transparent);
     background-size: cover;
     background-position: center;
-    padding: 100px 20px;
+    padding: 284px 20px;
     text-align: center;
     color: white;
 }
@@ -296,6 +297,7 @@ nav ul li a:hover {
     flex: 1 1 200px;
     max-width: 250px;
     text-align: center;
+    background: dimgrey;
 }
 
 .category-item:hover {
@@ -367,8 +369,11 @@ body {
 }
 
 header {
+    transition: 0.2s;
     background-color: #333;
-    padding: 10px 0;
+    padding: 49px 0;
+    font-size: 19px;
+    font-weight: bold;
 }
 
 nav ul {
@@ -387,6 +392,8 @@ nav ul li a {
 nav ul li a:hover {
     background-color: #555;
     border-radius: 5px;
+    text-decoration: underline;
+    transition: 0.2s;
 }
 
 h1 {
@@ -397,6 +404,11 @@ h1 {
 }
 
 /* Categories Section */
+
+.categories {
+    color: black;
+}
+
 .categories-page {
     padding: 50px 20px;
     background-color: #fff;
@@ -418,6 +430,7 @@ h1 {
     transition: transform 0.3s, box-shadow 0.3s;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     cursor: pointer;
+    background: dimgrey;
 }
 
 .category-item img {
@@ -457,7 +470,39 @@ footer {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
 }
-.hero h1 {
+/* .hero h1 {
     color: yellow;
+} */
+
+.oil {
+    background-color: olive;
+    color: #4f4545;
 }
 
+.lights {
+    background-color: #272727;
+}
+
+.battery {
+    background-color: lightblue;
+}
+
+.brakes {
+    background: #252537;
+}
+
+.filters {
+    background: #91b591;
+}
+
+.tires {
+    background-color: darkred;
+}
+
+.categories-page {
+    background: linear-gradient(45deg, black, transparent);
+}
+
+h1 {
+    color: currentcolor;
+}
